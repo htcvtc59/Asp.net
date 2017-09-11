@@ -1,0 +1,22 @@
+﻿@using ProductList.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product List</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Image</th>
+    </tr>
+    @foreach(Product p in ViewBag.Product)
+    {
+        <tr>
+            <td>@p.Name</td>
+            <td>@p.Price</td>
+            <td><img src="~/Images/@p.Images" height="20" width="20"/></td>
+        </tr>
+    }
+</table>
+

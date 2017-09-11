@@ -1,0 +1,19 @@
+﻿@model List<LoginAddAccount.Models.Account>
+@{
+    ViewBag.Title = "CustomPaging";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grid = new WebGrid(rowsPerPage: ViewBag.PageSize, canPage: true);
+    grid.Bind(source: Model, rowCount: ViewBag.TotalRows, autoSortAndPage: false);
+}
+
+<h2>CustomPaging</h2>
+<div class="row">
+    @grid.GetHtml(
+    tableStyle: "",
+    columns: grid.Columns(
+        grid.Column("username", "user"),
+        grid.Column("password", "pass")
+        )
+    )
+</div>
+

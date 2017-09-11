@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>HelloWorld</div>
+@{Html.BeginForm("Hello", "Welcome"); }
+@Html.Label("Enter your name: ");
+@Html.TextBox("name");
+<input type="submit" value="GO" />
+@{Html.EndForm();}
+
+

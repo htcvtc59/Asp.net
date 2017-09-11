@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var items = ViewBag.books;
+}
+
+<h2>Index</h2>
+@foreach (var item in items)
+{
+    <p>@item.title</p>
+    <p>@item.author</p>
+}
+

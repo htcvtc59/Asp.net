@@ -1,0 +1,16 @@
+﻿@using LoginLogout.Models;
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    var user = Session["user"] as User;
+}
+<h2>Welcome @user.Name</h2>
+@if (user != null)
+{
+    <h3>Welcome</h3>
+    @Html.ActionLink("Logout", "Logout", "Login");
+    
+}
+
+

@@ -1,0 +1,29 @@
+﻿@model LoginAddAccount.Models.Account
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+<h2>Register Form</h2>
+@{Html.BeginForm("Register", "Account");}
+<div>
+    @Html.LabelFor(model => model.username)
+    @Html.TextBoxFor(model => model.username)
+</div>
+<div>
+    @Html.LabelFor(model => model.password)
+    @Html.TextBoxFor(model => model.password)
+</div>
+<div>
+    <input type="submit" value="Register" />
+</div>
+@{Html.EndForm();}
+<div class="row">
+    @grid.GetHtml(fillEmptyRows:true);
+</div>
+
+
+
+
+

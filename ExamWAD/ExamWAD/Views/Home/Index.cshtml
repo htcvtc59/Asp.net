@@ -1,0 +1,33 @@
+﻿
+@model List<ExamWAD.Models.Book>
+
+@using ExamWAD.Models
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var list = (List<ExamWAD.Models.TitleBook>)ViewBag.listTitle;
+}
+@Html.ActionLink("Thêm Sách", "AddBook", "Book", null, new { @class = "btn btn-success" })
+@Html.ActionLink("Thêm tiêu đề", "AddTitleB", "Book", null, new { @class = "btn btn-success" })
+
+<h2>Danh mục sách</h2>
+@foreach (var item in Model)
+{
+
+    <a href="/Home/Detail/@item.Bookid">
+        <p>
+            @foreach (var itemt in list)
+            {
+                @itemt.Title
+            }
+
+        </p>
+    </a>
+
+    <p>@item.Price</p>
+    <p>
+        <img src="@item.Image" />
+    </p>
+}
+

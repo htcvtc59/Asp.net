@@ -1,0 +1,37 @@
+﻿@model AnnotationValidatioonASP.Models.User
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+@using (Html.BeginForm())
+{
+    <div>@Html.LabelFor(m => m.Login)</div>
+    <div>
+        @Html.TextBoxFor(m => m.Login)
+        @Html.ValidationMessageFor(m => m.Login)
+    </div>
+    <div>@Html.LabelFor(m => m.Name)</div>
+    <div>
+        @Html.TextBoxFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    <div>@Html.LabelFor(m => m.Password)</div>
+    <div>
+        @Html.TextBoxFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+    <div>@Html.LabelFor(m => m.ReEnterPassword)</div>
+    <div>
+        @Html.TextBoxFor(m => m.ReEnterPassword)
+        @Html.ValidationMessageFor(m => m.ReEnterPassword)
+    </div>
+    <div>@Html.LabelFor(m => m.Email)</div>
+    <div>
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <input type="submit" value="Register" />
+}
+

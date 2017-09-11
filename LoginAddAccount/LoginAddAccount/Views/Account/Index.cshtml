@@ -1,0 +1,21 @@
+﻿@model LoginAddAccount.Models.Account
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+@{Html.BeginForm("Login", "Account");}
+<div>
+    @Html.LabelFor(model=>model.username)
+    @Html.TextBoxFor(model=>model.username)
+</div>
+<div>
+    @Html.LabelFor(model => model.password)
+    @Html.TextBoxFor(model => model.password)
+</div>
+<div>
+    <input type="submit" value="Login" />
+</div>
+@{Html.EndForm();}
+

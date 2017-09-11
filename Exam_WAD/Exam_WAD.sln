@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exam_WAD", "Exam_WAD\Exam_WAD.csproj", "{50FA2B26-6B24-4201-935E-176DB4DCB910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50FA2B26-6B24-4201-935E-176DB4DCB910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FA2B26-6B24-4201-935E-176DB4DCB910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FA2B26-6B24-4201-935E-176DB4DCB910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FA2B26-6B24-4201-935E-176DB4DCB910}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

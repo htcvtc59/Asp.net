@@ -1,0 +1,14 @@
+﻿@model ExamWAD.Models.Book
+
+@{
+    ViewBag.Title = "Detail";
+    var title = (ExamWAD.Models.TitleBook)ViewBag.titleb;
+}
+
+<h2>Chi tiết</h2>
+<p>@title.Title</p>
+<p>@Model.Author</p>
+<p>@Model.Price</p>
+<p>@Model.Description</p>
+<p><img src="@Model.Image"/></p>
+

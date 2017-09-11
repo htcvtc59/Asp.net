@@ -1,0 +1,12 @@
+﻿@model List<LoginAddAccount.Models.Account>
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var grid = new WebGrid(rowsPerPage: ViewBag.PageSize,canPage:true);
+    grid.Bind(source: ViewBag.data, rowCount:ViewBag.TotalRows, autoSortAndPage:false);
+}
+
+<div class="row">
+    @grid.GetHtml()
+</div>
+
